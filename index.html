@@ -2,18 +2,41 @@
 <html>
     <head>
         <title>Juanita Greenberg's Nacho Royale</title>
-        <h1>Juanita Greenberg's Nacho Royale</h1>
+        <style>
+            #JGhead {
+                float: none;
+            }
+
+            #all {
+                display: flex;
+            }
+
+            #juanita-pic {
+                height: 300px;
+            }
+
+            #form {
+                padding: 20px;
+            }
+
+            #about {
+                padding: 20px;
+            }
+        </style>
     </head>
     <body>
-        <section>
+        <h1 id="JGHead" style="background-color: aqua; text-align:center">Juanita Greenberg's Nacho Royale</h1>
+        <section id="all"> 
+        <section id="about">
             <h3>About the Company</h3>
             <p>410 W Coleman Blvd, Mt Pleasant, SC 29464</p>
-            <img alt="Juanita Greenberg's" 
+            <img id="juanita-pic" alt="Juanita Greenberg's" 
             src="https://juanitagreenbergs.com/wp-content/uploads/2017/10/Juanita_Green.jpg">
             <p>Juanita Greenberg's Nacho Royale</p>
             <p>(843) 329-6224</p>
         </section>
-        <section>
+        <section id="form">
+            <h3>Newsletter Form</h3>
             <form>
                 First Name: <br>
                 <input type="text" name="firstname"><br>
@@ -21,12 +44,13 @@
                 <input type="text" name="lastname"><br>
                 Email Address: <br>
                 <input type="text" name="email"><br>
-                Additional Services?:
+                Additional Services?
                 <input type="checkbox" name="additional"><br>
                 <button type="button">
                     Submit
                 </button>
             </form>
         </section>
+    </section>
     </body>
 </html>
